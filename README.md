@@ -1,14 +1,15 @@
-##azs-json-filter-golang
+## azs-json-filter-golang
 
-A simple script for filtering a json file.
+### A simple script for filtering a json file.
 
-Disclaimer:
+#### Disclaimer:
 The script is not universal, it was needed for a single use of a large amount of data.
 
 Designed for filtering by companies of fuel stations for integration into Maps.
 
 Filters data by properties.hintContent in the json structure as:
 
+```json
 [
   {
     "properties": {
@@ -30,3 +31,5 @@ Filters data by properties.hintContent in the json structure as:
   },
   ...
 ]
+```
+
