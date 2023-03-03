@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	sort_script("maps/map_gpn.json")
+	filter_script("maps/map_luk.json", "РосНефть", "new_map_rn.json")
 }
