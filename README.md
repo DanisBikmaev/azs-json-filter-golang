@@ -1,4 +1,4 @@
-azs-json-filter-golang
+##azs-json-filter-golang
 
 A simple script for filtering a json file.
 
