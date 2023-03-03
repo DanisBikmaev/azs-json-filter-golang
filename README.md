@@ -26,7 +26,7 @@ Filters data by properties.hintContent in the json structure as:
       "preset": "someData",
       "iconColor": "someData"
     },
-    "id": someData,
+    "id": "someData",
     "type": "someData"
   },
   ...
