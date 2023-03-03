@@ -7,15 +7,15 @@ import (
 	"os"
 )
 
-func filter_script(inputFileWithFormat string, filterBy string, outputFileWithFormat string) {
-	byteJsonFile := get_json(inputFileWithFormat)
+func filter_script(JsonFileName string, filterBy string) {
+	byteJsonFile := get_json(JsonFileName)
 	data := filtered_json(byteJsonFile, filterBy)
-	generate_json_file(outputFileWithFormat, data)
+	generate_json_file(JsonFileName, data)
 }
 
-func get_json(jsonFileLocation string) []byte {
+func get_json(inputJsonFileName string) []byte {
 	fmt.Println("azs-json-sort")
-	jsonFile, err := os.Open(jsonFileLocation)
+	jsonFile, err := os.Open("json_input/" + inputJsonFileName + ".json")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -46,6 +46,6 @@ func filtered_json(byteJsonFile []byte, filterBy string) []byte {
 	return (data)
 }
 
-func generate_json_file(outputFileWithFormat string, data []byte) {
-	os.WriteFile(outputFileWithFormat, data, 0644)
+func generate_json_file(JsonFileName string, data []byte) {
+	os.WriteFile("json_output/"+JsonFileName+".json", data, 0644)
 }
