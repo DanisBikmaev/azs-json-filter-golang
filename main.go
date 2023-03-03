@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	println("azs-json-sort")
+	sort_script("maps/map_gpn.json")
 }
